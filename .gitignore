@@ -130,3 +130,7 @@ dmypy.json
 
 # binaries for project
 bins/
+
+# logs
+
+nohup.out
