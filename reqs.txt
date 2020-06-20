@@ -5,3 +5,4 @@ seaborn==0.10.1
 numpy==1.18.5
 joblib==0.15.1
 scikit_learn==0.23.1
+streamlit==0.52.1
