@@ -81,9 +81,13 @@ st.title("Segmentator")
 knn, segment_binarizer, segment_net = load_models()
 
 xs, ys = read_test_data()
+target_indices = [0, 2390, 49074]
+xs = [x for i, x in enumerate(xs) if i in target_indices]
+ys = [y for i, y in enumerate(ys) if i in target_indices]
+
 st.write("Загружено", len(ys), "семплов")
 
-index = st.radio("Какого пользователя анализировать", (0, 2390, 49074))
+index = st.radio("Какого пользователя анализировать", list(range(len(xs))))
 
 x_cur = xs[index]
 y_cur = ys[index]
