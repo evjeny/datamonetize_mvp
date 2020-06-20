@@ -83,7 +83,7 @@ knn, segment_binarizer, segment_net = load_models()
 xs, ys = read_test_data()
 st.write("Загружено", len(ys), "семплов")
 
-index = st.slider("Какого пользователя анализировать", 0, len(xs)-1)
+index = st.radio("Какого пользователя анализировать", (0, 2390, 49074))
 
 x_cur = xs[index]
 y_cur = ys[index]
