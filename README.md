@@ -13,3 +13,4 @@
     ```bash
     ./run.sh
     ```
+4. Или поэкспериментируйте [в Colab'е](https://colab.research.google.com/github/evjeny/datamonetize_mvp/blob/master/data_monetize.ipynb)!
